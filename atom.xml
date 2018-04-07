@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://drunkevil.org/"/>
-  <updated>2018-04-06T02:00:15.679Z</updated>
+  <updated>2018-04-07T12:39:47.458Z</updated>
   <id>http://drunkevil.org/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>区块链是一种知识，而智能手机则是一种工具</title>
+    <link href="http://drunkevil.org/2018/04/07/blockchain-and-smartphone/"/>
+    <id>http://drunkevil.org/2018/04/07/blockchain-and-smartphone/</id>
+    <published>2018-04-07T13:22:20.000Z</published>
+    <updated>2018-04-07T12:39:47.458Z</updated>
+    
+    <content type="html"><![CDATA[<p>周末，和两个在金融圈工作的同学聊天：你们怎么看待以比特币为代表的区块链技术？</p><a id="more"></a><p>得到的答案惊人的一致：</p><blockquote><p>泡沫。</p></blockquote><p>于是不得不更换聊天话题。</p><p>同样的问题，一个星期以前，午饭后聊天时从同事那里得到的答案是：</p><blockquote><p>庞氏骗局。</p></blockquote><p>这些答案，大概代表了我身边比较熟悉的一些人对于比特币和区块链的认识。</p><p>而远在农村的父母，很难想象该去怎么跟他们介绍区块链：去中心化？不可篡改？智能合约？用人民币投资加密货币？得了吧，我只知道钱放在国家的银行里安全。至于通货膨胀，他们的认识大概是现在的100元钱花的越来越快了。</p><p>大概会有一点点的奇怪。因为比特币差不多已经出来了十年，真正火热起来也应该有三五年了，父母们不理解也就不说了，而我的这些在一线城市，学历不算太低的同学和同事，如此一致的观点多少有点让人失望。</p><p>坦白来讲，在去年接触steemit之前，我对于比特币和区块链的了解也很少。</p><p>而另外一个方面是，2007年才出现的智能手机，差不多跟比特币算是同一个时代的产物，则早已飞入了寻常百姓家，极大地影响甚至是改变了人们的生活：你在城市里用手机来沟通，买菜，打车，坐地铁，父母在农村也早已学会了微信，朋友圈，头条，小视频。</p><p>我想，大概的原因在于：<strong>本质上，区块链是一种知识，而智能手机则是一种工具。</strong></p><p>早在远古时代，人们就已经学会了使用工具来生活；而知识的积累和传播则表现的滞后了很多，也缓慢了很多。人们对于知识的欲望远远的低于对工具的欲望，因为一旦学会使用工具，生活将会便利很多，而学习知识则显得反人性了很多。</p><p>计算机科学，密码学，网络科学，经济学等等，所有这些都是区块链这个“王谢门前燕”飞入“寻常百姓家”的绊脚石。下班后我们只想安静的躺着刷刷手机，看看那些头条，十万加，比如，《<a href="http://tech.sina.com.cn/i/2018-04-05/doc-ifyuwqez5368035.shtml" target="_blank" rel="noopener">摩拜创始人套现15亿背后，你的同龄人，正在抛弃你</a>》，而不是去研究一下比特币背后的计算机和密码学的原理。</p><p>这些所谓的头条信息看上去干货满满，实际上只是在利用人们的焦虑；看上去像知识，但远远不是。</p><p>理智上，我们大多数人都有一种知识焦虑（否则这两年的知识付费就不会这么火了）；情感上，我们大多数人却又对像比特币这样的新知识不太像我们希望的那样向往。</p><p>实际上，智能手机的背后也包含了大量的知识，只是我们不需要明白它们的原理就可以使用。而以比特币为代表的区块链的知识暂时还没有这种包装方式。</p><p>也许，区块链这种知识需要像智能手机背后的知识一样被完美的包装之后才能进一步的普及，进而展现其真正的价值。</p><p><img src="https://steemitimages.com/DQmdQFPzWVL4Q7qoCbDC2rLCTT6GfaJX74QqSBwojJ7J97A/IMG_3200.JPG" alt=""><img src="https://steemitimages.com/DQmYerQkmKLSb4DViFw7MRtzubJaoUMWrwx8VtHZPQ7wXDG/IMG_3199.JPG" alt=""></p><p>图片：梅特卡夫定律，上海科技馆。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;周末，和两个在金融圈工作的同学聊天：你们怎么看待以比特币为代表的区块链技术？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="观点看法" scheme="http://drunkevil.org/categories/%E8%A7%82%E7%82%B9%E7%9C%8B%E6%B3%95/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>作为消费者，我是如何维护自己的合法权益的</title>
@@ -392,26 +412,6 @@
     <summary type="html">
     
       &lt;p&gt;这场雪下得有些突然而又在计划中，突然是因为午饭后还是大好的太阳，在计划中是因为早在天气预报中看到了。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="其他分类" scheme="http://drunkevil.org/categories/%E5%85%B6%E4%BB%96%E5%88%86%E7%B1%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>手机刷码，半秒过闸</title>
-    <link href="http://drunkevil.org/2018/01/20/shanghai-metro/"/>
-    <id>http://drunkevil.org/2018/01/20/shanghai-metro/</id>
-    <published>2018-01-20T04:22:20.000Z</published>
-    <updated>2018-01-20T15:16:38.123Z</updated>
-    
-    <content type="html"><![CDATA[<p>由于住在乡下，平时基本上很少进城，地铁坐的也不多，很少感受过魔都地铁<a href="https://steemit.com/cn/@drunkevil/4liiml" target="_blank" rel="noopener">拥挤的早高峰</a>。</p><a id="more"></a><p>早几天看到<a href="http://www.shmetro.com/node49/201801/con115019.htm" target="_blank" rel="noopener">新闻</a>，1月20号开始，上海地铁开始支持手机扫码支付。今天正好是周六，需要进城办点事儿，就顺便假装忘记带公交卡了，体验一把扫码进站的快感。这年头，路边买个烤红薯都要手机扫码支付，<del>坐地铁还要带公交卡实在是跟不上时代的步伐</del>。</p><p>在使用之前，你需要下载“Metro大都会”App，并像大多数的国内涉及到钱的应用一样需要实名制验证，这一步可以通过支付宝来完成，然后绑定支付宝或者银联卡就可以愉快的扫码乘车了，二者最近都有不同力度的优惠，老冤家再次正面交手。</p><p><img src="https://steemitimages.com/DQmf8rjWeDrkGYmkkRN6VLvp7P142oh38Ad9mWousgci5ue/IMG_5002.JPG" alt=""></p><p>由于使用了“二维码双脱机BLE蓝牙回写”（<del>不要问我这是什么，只知道它来自复旦微电子</del>），与传统的支付宝或微信扫码支付不同的是，不需要网络就可以使用，号称“半秒过闸”。</p><p>使用下来的体验是，扫码确实挺快的，但由于需要提前打开手机APP，而且平时一般蓝牙不开的话还需要打开蓝牙，整个流程下来没有直接刷卡顺畅。</p><p>当前来看，除了在真的忘记带卡的情况下，似乎还不是特别的便利。尤其是手机如果不是最新的旗舰机的话打开APP的反应时间也是一大障碍。如果不是硬件要求，还是NFC更方便一些。手机扫码支付只是除了公交卡和部分手环之外的另外一个选择而已。当然，还有一个好处就是不需要排队充值了，大规模使用的话地铁站的工作人员可能会减少。</p><p>技术上，这次的手机扫码支付可谓是阿里的完胜：</p><blockquote><p>“Metro大都会”App 背后采用阿里巴巴、蚂蚁金服多项技术。App前端采用了蚂蚁金融云mPaaS移动开放平台，后端依托阿里云计算和多层防护的云安全平台。支付宝独特的“双因子”实人认证技术，能确保是本人开通，安全达到了金融级水平。另外，还采用了高德地图技术，在地铁里乘客可以精确导航，甚至能查到地铁卫生间的位置。</p></blockquote><p>支付方式上，暂时只有支付宝和银联，没有微信。作为移动支付的重头战场，由于入口不是支付宝或者银联的APP，后续微信加入的可能性应该很大。一旦加入的话，巨头烧钱的模式指日可待？</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;由于住在乡下，平时基本上很少进城，地铁坐的也不多，很少感受过魔都地铁&lt;a href=&quot;https://steemit.com/cn/@drunkevil/4liiml&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;拥挤的早高峰&lt;/a&gt;。&lt;/p&gt;
     
     </summary>
     
