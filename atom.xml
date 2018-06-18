@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://drunkevil.org/"/>
-  <updated>2018-04-14T14:23:23.596Z</updated>
+  <updated>2018-06-18T04:14:13.119Z</updated>
   <id>http://drunkevil.org/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>读@dapeng的《学R》</title>
+    <link href="http://drunkevil.org/2018/06/18/reading-of-learning-r/"/>
+    <id>http://drunkevil.org/2018/06/18/reading-of-learning-r/</id>
+    <published>2018-06-18T04:22:20.000Z</published>
+    <updated>2018-06-18T04:14:13.119Z</updated>
+    
+    <content type="html"><![CDATA[<p>在<a href="https://steemit.com/cn/@drunkevil/r" target="_blank" rel="noopener">体会到了R的锋利</a>之后，在网上入手了@dapeng的热销书《<a href="http://xuer.dapengde.com/" target="_blank" rel="noopener">学 R：零基础学习 R 语言</a>》，近距离地感受下R的过人之处。</p><a id="more"></a><p>在<a href="https://steemit.com/cn/@drunkevil/r" target="_blank" rel="noopener">体会到了R的锋利</a>之后，在网上入手了@dapeng的热销书《<a href="http://xuer.dapengde.com/" target="_blank" rel="noopener">学 R：零基础学习 R 语言</a>》，近距离地感受下R的过人之处。</p><p><img src="https://cdn.steemitimages.com/DQmf4HYZ5Te9d4L6rKBC1j1EwZbKubppTqUFj8MMTCiJRB5/IMG_5611.JPG" alt=""></p><p>昨天下午，花了两三个小时的时间将这本《学R》读了一遍。@dapeng 辛辛苦苦<a href="https://steemit.com/cn/@dapeng/xuer-sale" target="_blank" rel="noopener">16个月怀胎</a>，我却只花了两三个小时就读了一遍，原因是，我并不需要每章都去读，有些章节，比如第17和18两章关于用R进行基础统计的内容，我可能暂时用不到；另外，整本书各章相对独立，对编程稍有基础的话大可不必从头到尾通读。</p><p>老实说，《学R》并不适合所有的想要学R的人，它更适合的是那些<strong>对R语言或者其他编程语言没有基础而又需要用到R语言的人</strong>，像O哥这样的大神或者城市的出租车司机大概不会买来阅读，这点从书的副标题和序言都可以看出。</p><p>与其他的《零基础学习xx》的所谓教程和图书最大的不同之处在于，《学R》十分真诚。它不是那种耳提面命似的辅导，没有多少术语和枯燥的公式，而是那种一对一的交流和探讨，是那种将自己七年的学习和使用经验的分享，如果你读过@dapeng的博客（包括但不限于steemit这里），大概会同意我的这种看法。</p><p>工作中，我很少用到统计学，数据分析倒是时常会接触，但基本上都是通过表格来处理，常用的需求一般是通过公司专门部门写的小工具，定制化十足而灵活性有限。有了R这一把利器，希望为自己的数据处理和分析提高一些效率，同时也增加一些乐趣。</p><p>当然，统计分析并不是R的唯一用武之地，如果这本《学R》只是在讲R在统计学中的应用，@dapeng 大概会少了三块钱的版税收入（哈哈）。看一下目录，与统计学直接相关的内容很少，更多的是R在不同方面的应用。尤其吸引我的是R的<code>bookdown</code>，<code>bolgdown</code>，<code>bookdownplus</code>等扩展包。</p><p>看完这本书，大概可以说自己真的是入门了，更多的功能需要去使用。毕竟R语言只是一种工具，有工具并且要会使用工具才能真正发挥它的价值。</p><p>那么，R真正的过人之处在哪里呢？容我开始使用后慢慢体会。</p><p>关于书中内容，一个小小的勘误：</p><table><thead><tr><th style="text-align:center">页码</th><th>错误</th><th>订正</th></tr></thead><tbody><tr><td style="text-align:center">12</td><td>哈姆雷</td><td>哈姆雷特</td></tr></tbody></table><p>顺便说一句，哈姆雷特这样的词语出现在编程语言的书中大概是我读到的第一次，当然，除了哈姆雷特之外，金庸，张无忌，四大名著的影子都会出现。虽然这些东西对书的内容并没有太大的提升，但对于书的可读性提升了好几个档次。与一本严肃的教科书相比，一本段子云集的…课外书自然更有吸引力。</p><p>最后小小八卦一下，包括这本书的作者介绍在内，看到过好几张@dapeng的照片（<a href="http://www.pzhao.org/zh/" target="_blank" rel="noopener">1</a>,<a href="https://steemit.com/introduceyourself/@dapeng/self-introduction-of-dapeng" target="_blank" rel="noopener">2</a>,<a href="https://steemit.com/cn/@dapeng/2wot2j" target="_blank" rel="noopener">3</a>,<a href="https://steemit.com/dlive/@dapeng/8db8cbc0-61a0-11e8-b143-ffce16c65548" target="_blank" rel="noopener">4</a>），但每次都感觉不像是同一个人，不知道有没有人也有这种感觉？</p><p>祝《学R》大卖！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在&lt;a href=&quot;https://steemit.com/cn/@drunkevil/r&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;体会到了R的锋利&lt;/a&gt;之后，在网上入手了@dapeng的热销书《&lt;a href=&quot;http://xuer.dapengde.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;学 R：零基础学习 R 语言&lt;/a&gt;》，近距离地感受下R的过人之处。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="读书观影" scheme="http://drunkevil.org/categories/%E8%AF%BB%E4%B9%A6%E8%A7%82%E5%BD%B1/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>drunkevil 名字的由来</title>
@@ -396,26 +416,6 @@
     </summary>
     
       <category term="游记系列" scheme="http://drunkevil.org/categories/%E6%B8%B8%E8%AE%B0%E7%B3%BB%E5%88%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>远山淡影：回忆不过是一种自我欺骗</title>
-    <link href="http://drunkevil.org/2018/01/29/A-Pale-View-Of-Hill/"/>
-    <id>http://drunkevil.org/2018/01/29/A-Pale-View-Of-Hill/</id>
-    <published>2018-01-29T04:22:20.000Z</published>
-    <updated>2018-01-29T14:09:39.009Z</updated>
-    
-    <content type="html"><![CDATA[<p>《远山淡影》是那种典型的“我有一个朋友，她有一个很不幸的过去，让我讲给你听”的写作方式，而读到最后，虽未直接说明，也会发现，其实这个朋友就是我自己。</p><a id="more"></a><p>至于为什么要用朋友的角度来写自己，石黑一雄的解释是：</p><blockquote><p>我就觉得用这种方法写小说很有意思：某个人觉得自己的经历太过痛苦或不堪，无法启口，于是借用别人的故事来讲自己的故事。</p></blockquote><p>小说以小女儿妮基从伦敦来看我为开端，以五天后我送她离开作为终结，时间上来看虽然只有五天，而在这五天里，我想起了二十多年前在长崎的那些往事，那些模糊不清的回忆，以及对大女儿景子自杀的反思。</p><p>这本书出版于1982年，二十多年前正好是战后的那些年。书中没有一个地方直接描写原子弹爆炸带来的直接后果，但原子弹爆炸带来的阴影却无处不在，尤其是对于儿童的影响。作者虽未明确的叙述自己带着女儿离开日本来到英国定居的过程，读者只能通过想象去猜测景子其实一直未能真正的融入异国他乡，那些童年的梦魇般的回忆自始至终都形影不离，这便是她最终选择自杀的根本原因，也是我最深的痛。</p><p>石黑一雄五岁时离开家乡长崎来到英国，将近三十年后才第一次返回日本，他对于日本的很多认识和记忆都是模糊的。就像小说中支离破碎的描述一样，而他也一再强调，自己对于背景的描写并不是如实描绘，而只是选取典型的内容，更多的细节留给读者去想象。</p><p>石黑一雄关心的不是外部的现实世界，而是人复杂的内心世界，而回忆恰恰是通往内心世界的最好途径，他曾经说：</p><blockquote><p>我喜欢回忆，是因为回忆是我们审视自己生活的过滤器。回忆模糊不清，就给自我欺骗提供了机会。作为一个作家，我更关心的是人们告诉自己发生了什么，而不是实际发生了什么。</p></blockquote><p>正如诺贝尔颁奖词说的那样：</p><blockquote><p>他在具有巨大情感力量的小说中，揭示了在我们对于与世界的联系的错觉下存在的深渊。</p></blockquote><p>这是石黑一雄的第一部小说，也是他的硕士毕业论文。如果你喜欢，三四个小时就可以读完。而读完这种小说，有一种比看非虚构的书获得的东西多得多的感觉。</p><p>以及，翻译得比《长日留痕》好了太多。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;《远山淡影》是那种典型的“我有一个朋友，她有一个很不幸的过去，让我讲给你听”的写作方式，而读到最后，虽未直接说明，也会发现，其实这个朋友就是我自己。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="读书观影" scheme="http://drunkevil.org/categories/%E8%AF%BB%E4%B9%A6%E8%A7%82%E5%BD%B1/"/>
     
     
   </entry>
