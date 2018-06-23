@@ -754,7 +754,7 @@ article .article-content h4,
 article .article-content h5,
 article .article-content h6 {
   color: #000;
-  font-weight: bold;
+  font-weight: 400;
   font-family: trebuchet ms, arial, helvetica, tahoma, verdana;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
