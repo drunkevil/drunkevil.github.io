@@ -1260,9 +1260,7 @@ section.comment {
     font-size: 90%;
   }
 }
-.categorieslist li {
-  text-decoration: underline;
-}
+
 .categorieslist li a {
   display: block;
   padding: 0.5em 5% 0.5em 0;
@@ -1325,9 +1323,7 @@ section.comment {
   }
 }
 
-.linkslist li {
-  text-decoration: underline;
-}
+
 .linkslist {
   margin-bottom: 1.5em!important;
 }
