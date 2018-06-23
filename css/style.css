@@ -274,13 +274,13 @@ body >header a {
 @media only screen and (min-width: 768px) {
   #textlogo h1.site-name {
     font-size: 150%;
-    color: #556677;
+    color: #7E5D5D;
   }
 }
 @media only screen and (min-width: 1024px) {
   #textlogo h1.site-name {
     font-size: 150%;
-    color: #556677;
+    color: #7E5D5D;
   }
 }
 #textlogo h2.blog-motto {
@@ -514,7 +514,7 @@ header nav ul li a {
   line-height: 1em;
   padding: 6px 0;
   background: #f5f5d5;
-  color: #BA2C2C !important;
+  color: #7E5D5D !important;
   text-decoration: none;
 }
 #main article.post-expand .article-more-link a:hover {
@@ -540,7 +540,7 @@ header nav ul li a {
   border-left: 0.5em solid #ccc;
 }
 .unexpand .prev:hover {
-  border-left: 0.5em solid #2ca6cb;
+  border-left: 0.5em solid #4349C7;
 }
 #page-nav {
   text-align: center;
@@ -555,11 +555,11 @@ header nav ul li a {
   padding: 0.5em 3em;
 }
 #page-nav a {
-  color: #2ca6cb;
+  color: #4349C7;
 }
 #page-nav a:hover {
   background: #ccc;
-  color: #2ca6cb;
+  color: #4349C7;
 }
 #page-nav .prev {
   float: left;
@@ -1444,10 +1444,10 @@ footer {
   }
 }
 .copyright a {
-  color: #2ca6cb;
+  color: #4349C7;
 }
 .copyright a:hover {
-  color: #2ca6cb;
+  color: #4349C7;
   text-decoration: underline;
 }
 .article-content pre,
@@ -1836,21 +1836,21 @@ div.asset-footer li{
 }
 
 .index_author a {
-	color: #BA2C2C;
+	color: #7E5D5D;
 	text-decoration: underline;
 }
 
 .index_time a {
-	color: #BA2C2C;
+	color: #7E5D5D;
 	text-decoration: underline;
 }
 .article-categories a {
-	color: #BA2C2C;
+	color: #7E5D5D;
 	text-decoration: underline;
 }
 
 .comments-count a {
-	color: #BA2C2C;
+	color: #7E5D5D;
 	text-decoration: underline;
 }
 
