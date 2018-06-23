@@ -840,6 +840,7 @@ article .article-content ul li {
 }
 article .article-content ol li {
   list-style-type: decimal;
+  line-height: 2;
 }
 article .article-content dl dt {
   font-weight: blod;
