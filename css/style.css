@@ -335,11 +335,11 @@ header nav {
   }
 }
 header nav ul li a {
-  margin: 0.2em 1.2em;
+  margin: 1.2em 0.6em;
 }
 @media only screen and (min-width: 1024px) {
   header nav ul li a {
-    margin: 0.2em 1.2em;
+    margin: 1.2em 0.6em;
   }
 }
 
