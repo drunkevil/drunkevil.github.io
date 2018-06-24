@@ -967,7 +967,7 @@ article .article-content .right {
 }
 footer.article-footer {
   background: #f5f5d5;
-  padding: 0 4%;
+  padding: 0;
   margin: 0;
 }
 
@@ -1831,7 +1831,7 @@ div.asset-footer li{
 .index_author {
   float: left;
   margin-top: 0.3em;
-  padding: 0.5em 0 0.5em 1em;
+  padding: 0.5em 0;
   color: #7E5D5D;
 }
 
