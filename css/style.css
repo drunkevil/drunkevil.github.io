@@ -258,8 +258,8 @@ body >header a {
 #textlogo {
   float: left;
   margin: 0;
-  width: 50%;
-  padding-bottom: 1em;
+  width: 30%;
+  padding-bottom: 0.8em;
 }
 
 
@@ -304,7 +304,7 @@ body >header a {
 header nav {
   float: left;
   width: 100%;
-  font-size: 112.5%;
+  font-size: 120%;
   padding-top: 0em;
   max-height: 0.01em;
   -webkit-transition: max-height 1s ease-out;
@@ -335,11 +335,11 @@ header nav {
   }
 }
 header nav ul li a {
-  margin: 1.2em 0.6em;
+  margin: 0.6em;
 }
 @media only screen and (min-width: 1024px) {
   header nav ul li a {
-    margin: 1.2em 0.6em;
+    margin: 0.6em;
   }
 }
 
