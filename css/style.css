@@ -1073,21 +1073,6 @@ footer.article-footer {
   margin-top: 0.3em;
   margin-left: -2em;
 }
-.article-categories span:before {
-  font-family: Georgia, serif,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "分类:";
-  color: #7E5D5D;
-}
-
-.article-footer .comments-count span:before {
-  font-family: Georgia, serif,sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "è¯„è®º:";
-  color: #7E5D5D;
-}
 
 .article-category-link {
   margin: 0 0.3em;
@@ -1857,7 +1842,7 @@ div.asset-footer li{
 .index_time {
   float: left;
   margin-top: 0.3em;
-  padding: 0.5em 1em;
+  padding: 0.5em 0 0.5em 1em;
   color: #7E5D5D;
   font-family: Monaco, Menlo, Consolas, Courier New, monospace;
 }
