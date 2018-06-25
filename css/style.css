@@ -1203,7 +1203,7 @@ section.comment {
   font-size: 1.1em;
   color: #000000;
   padding: 0 0 0.3125em 0;
-  border-bottom: 0.1875em solid #ccc;
+  border-bottom: 0.1em solid #ccc;
 }
 .asidetitle a {
   text-decoration: underline;
@@ -1231,10 +1231,9 @@ section.comment {
     margin-bottom: 1.5em;
     margin-top: 1em;
     padding: 10px;
-    border: 2px solid rgb(171, 208, 236);
+    border: 1px solid rgb(171, 208, 236);
     border-radius: 15px;
-    background-color: aliceblue;
-  }
+   }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1326,9 +1325,8 @@ section.comment {
   float: none;
   margin: auto;
   padding: 10px;
-  border: 2px solid rgb(171, 208, 236);
+  border: 1px solid rgb(171, 208, 236);
   border-radius: 15px;
-  background-color: aliceblue;
   }
 }
 .linkslist ul {
