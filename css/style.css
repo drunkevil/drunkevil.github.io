@@ -205,7 +205,7 @@ body >header {
 }
 body >header >div {
   width: 90%;
-  padding: 2em 1em 0 1em;
+  padding: 2em 2em 0 2em;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -327,6 +327,7 @@ header nav {
 @media only screen and (min-width: 1024px) {
   header nav ul {
     float: right;
+	margin-right: 3em;
   }
 }
 @media only screen and (min-width: 1024px) {
