@@ -1180,19 +1180,6 @@ section.comment {
   }
 }
 
-@media only screen and (min-width: 1560px) {
-  #asidepart {
-    position: relative;
-    float: left;
-    width: 15%;
-    margin: 4em 0 0 10%;
-    background-color: #F5F5D5;
-    box-shadow: 2px 2px 2px #F5F5D5;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border-radius: 20px;
-  }
-}
 
 @media only screen and (max-width: 767px) {
 	#asidepart {
