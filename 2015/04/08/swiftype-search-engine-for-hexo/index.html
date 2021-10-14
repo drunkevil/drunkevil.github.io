@@ -1,0 +1,198 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Hexo静态博客添加站内搜索--Swiftype | 闫志伟的网络日志</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <meta name="generator" content="Hexo" />
+  <meta name="author" content="闫志伟">
+  
+  <link rel="alternative" href="/atom.xml" title="闫志伟的网络日志" type="application/atom+xml">
+  <link rel="icon" href="/img/yan.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+  <body>
+    <div id="container">
+      
+
+<div id="main" class="post" itemscope itemprop="blogPost">
+  
+
+  <div id="header-name">闫志伟的网络日志 <span id="site_location"> » <a href="http://drunkevil.org/" accesskey="1">首页</a></span><span id="site_about"> » <a href="http://drunkevil.org/about/">关于</a></span><span id="site_archive"> » <a href="http://drunkevil.org/archives/">归档</a></span>
+  </div>
+
+  <div class="asset-footer">
+		<ul>
+     		
+ 				
+ 			<li><strong>下一篇：</strong> <a href="/2015/04/09/the-beautiful-spurs/" title="那样美丽的马刺">
+  			  			那样美丽的马刺
+			</a></li>
+
+			
+				
+			<li><strong>上一篇：</strong> <a href="/2015/04/07/something-about-reading/"  title="朱光潜先生谈读书">
+  			朱光潜先生谈读书</a></li>
+			
+			
+		</ul>
+ </div>
+
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/04/08/swiftype-search-engine-for-hexo/" title="Hexo静态博客添加站内搜索--Swiftype" itemprop="url">Hexo静态博客添加站内搜索--Swiftype</a>
+  </h1>
+  
+  <p class="article-author">作者：
+		<a href="http://drunkevil.org/about" target="_blank">闫志伟</a>
+	</p>
+
+  <p class="article-time">
+    <time datetime="2015-04-08T02:50:27.000Z" itemprop="datePublished"> 日期： 2015-04-08</time>
+  </p>
+
+ 
+</header>
+	<div class="article-content">
+		
+		<p>大多数像Hexo一样的静态博客系统，很多功能都需要借助第三方的服务才能实现，比如评论系统、分享功能和站内搜索等。这对于一些对自己的数据比较敏感的人来说很难接受。</p>
+<span id="more"></span>
+
+<p>我的看法是，只要第三方应用做得好并且可靠，就会去使用。WordPress中很多做得很好的第三方插件使用者也很多。所以，对于第三方的东西，不能一棒子打死。</p>
+<p>为静态博客添加第三方应用的方式大同小异，都是将第三方提供的JS代码嵌入到网站模板的合适位置，调用其服务器端代码。</p>
+<p>作为个人博客的基础功能之一，站内搜索必不可少，提供这一功能的第三方公司也为数不少。其中，百度站内搜索和Google CSE类似，都是依托自身强大的搜索技术提供服务；而微搜索和Swiftype则是专门做站内搜索功能的初创企业的代表，后者更是其中的佼佼者，2012年毕业于大名鼎鼎的Y Combinator，总部位于旧金山。</p>
+<p>Google无疑是搜索领域的老大，但是Swiftype也有自己面向网站和app侧的优势，它的平台可定制性很强，Swiftype还开放了API接口，供网站深度访问其搜索功能，可以满足不同网站的个性化需求，而Google的Custome Search Engine，定制性不够强。关键的是，由于被墙的原因，Google CSE在国内也基本上很难使用。</p>
+<p>Swiftype可以为网站及移动app提供内置搜索引掣服务。其部署十分简单，只须输入URL地址平台即可执行对用户网站的抓取，插入JS代码嵌入网站就即完成搜索引擎的创建。Swiftype还提供了分析服务，供网站检索分析用户的搜索行为和使用偏好。Swiftype还支持对搜索结果排序进行定制。</p>
+<p>我的博客采用<a target="_blank" rel="noopener" href="http://drunkevil.com/2015/02/05/hexo-gitcafe/">Hexo</a>搭建，主题在<a target="_blank" rel="noopener" href="https://github.com/wuchong/jacman">jacman</a>的基础上修改而来。前两天放假，增加了基于Swiftype的站内搜索功能，下面是实现步骤：</p>
+<hr>
+<h4 id="1、"><a href="#1、" class="headerlink" title="1、"></a>1、</h4><p>到swiftype的网站<a target="_blank" rel="noopener" href="https://swiftype.com/">https://swiftype.com</a>注册账号，输入自己网站的URL地址，根据指引建立自己站点对应的Engine；</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/aeba7ac3gw1eqx9ly7v66j20g30b7gmy.jpg"></p>
+<h4 id="2、"><a href="#2、" class="headerlink" title="2、"></a>2、</h4><p>切换到Install面板，根据需要配置自己站点的Engine，我的配置如下；</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/aeba7ac3gw1eqx9lxo32ej20fu0rzq5z.jpg"></p>
+<h4 id="3、"><a href="#3、" class="headerlink" title="3、"></a>3、</h4><p>点击左侧的“SWIFTYPE INSTALL CODE”获取根据配置得到的JS代码；</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/aeba7ac3gw1eqx9lx8p5zj20q70exwgy.jpg"></p>
+<p>将其添加到jacman\layout\ _partial目录下的footer.ejs文件;</p>
+<h4 id="4、"><a href="#4、" class="headerlink" title="4、"></a>4、</h4><p>在jacman主题下的_config.yml文件末尾添加如下代码：</p>
+<blockquote>
+<pre><code>swift_search:
+</code></pre>
+<p>  ​        enable: true</p>
+</blockquote>
+<h4 id="5、"><a href="#5、" class="headerlink" title="5、"></a>5、</h4><p>在hexo的source目录下建立一个search文件夹，并在其中新建一个index.md文件，其内容为：</p>
+<blockquote>
+<pre><code>layout: search
+
+title: search
+---
+</code></pre>
+</blockquote>
+<h4 id="6、"><a href="#6、" class="headerlink" title="6、"></a>6、</h4><p>找到jacman\layout\ _partial目录下的header.ejs文件，在其中添加如下代码：</p>
+<blockquote>
+<pre><code>&lt;% if (theme.swift_search.enable)&#123; %&gt;
+​    &lt;form class=&quot;search&quot; action=&quot;&lt;%- config.root %&gt;search/index.html&quot; method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;
+​    &lt;input type=&quot;text&quot; id=&quot;st-search-inpu&quot; maxlength=&quot;20&quot; placeholder=&quot;搜索&quot; /&gt;
+​    &lt;/form&gt;
+&lt;% &#125;
+</code></pre>
+</blockquote>
+<h4 id="7、"><a href="#7、" class="headerlink" title="7、"></a>7、</h4><p>将jacman\layout\ _partial目录下的search.ejs中的内容替换为如下代码（主要用来控制结果的显示样式，可根据个人爱好修改）：</p>
+<blockquote>
+<pre><code>&lt;% if(theme.swift_search.enable) &#123; %&gt;
+​    &lt;div  id=&quot;container&quot; class=&quot;page&quot;&gt;
+</code></pre>
+<p>  ​        <div id="st-results-container" style="width:70%; margin:1.5em auto">正在加载搜索结果，请稍等。</div><br>  ​    <style><br>    .st-result-text {<br>     ​    background: #fafafa;<br>  ​        display: block;<br>  ​        border-left: 0.5em solid #ccc;<br>  ​        -webkit-transition: border-left 0.45s;<br>  ​        -moz-transition: border-left 0.45s;<br>  ​        -o-transition: border-left 0.45s;<br>  ​        -ms-transition: border-left 0.45s;<br>  ​        transition: border-left 0.45s;<br>  ​        padding: 0.5em;<br>    ​    }<br>    @media only screen and (min-width: 768px) {<br>  ​    .st-result-text {<br>        padding: 1em;<br>  ​        }<br>    }<br>    .st-result-text:hover {<br>          border-left: 0.5em solid #ea6753;<br>    ​    }<br>    .st-result-text h3 a{<br>  ​        color: #2ca6cb;<br>  ​        line-height: 1.5;<br>  ​        font-size: 22px;<br>    ​    }<br>    .st-snippet em {<br>  ​        font-weight: bold;<br>  ​        color: #ea6753;<br>    ​    }<br>    </style><br>    &lt;% } %&gt;</p>
+</blockquote>
+<h4 id="8、"><a href="#8、" class="headerlink" title="8、"></a>8、</h4><p>至此，配置完成，<code>hexo d -g</code>重新部署一下即可出现站内搜索功能。搜索框的样式可根据个人爱好在CSS文件中修改。</p>
+<p>麻雀虽小，五脏俱全，博客的基础功能基本上都已实现。</p>
+<hr>
+<p>####参考链接：</p>
+<p>[1]  <a target="_blank" rel="noopener" href="http://blog.moyizhou.cn/web/search-engine-for-static-pages/">静态博客如何实现站内搜索</a>；</p>
+<p>[2]  文中代码主要参考的<a target="_blank" rel="noopener" href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype.html">这里</a>，向博主表示感谢。</p>
+
+ 	
+ 	<p>（完）</p>
+	
+
+
+ 	<div class="asset-footer">
+	<h4>文档信息</h4>
+		<ul>
+			<li>博文分类： <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96%E5%88%86%E7%B1%BB/">其他分类</a> </li>
+    		<li>发布日期： <a href="/2015/04/08/swiftype-search-engine-for-hexo/" target="_blank">2015-04-08</a></li>
+			<li>更多内容： <a href="http://drunkevil.org/archives/" target="_blank">文章存档</a> </li>
+		</ul>
+	</div>
+	
+。       
+	
+	
+
+	
+	</article>
+</div>  
+   
+  
+
+    </div>
+    <footer><div id="footer" >
+	<p class="copyright"> © <a href="http://drunkevil.org/" target="_blank" title="drunkevil">drunkevil</a> 2014 - 2021 
+	</p>
+
+</div>
+
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+ 
+
+
+
+
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5c3515e8fd7857c1fb4d4de80edc79ab";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+  </body>
+</html>
+

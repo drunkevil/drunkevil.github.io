@@ -1,0 +1,173 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Notepad++背后的故事 | 闫志伟的网络日志</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <meta name="generator" content="Hexo" />
+  <meta name="author" content="闫志伟">
+  
+  <link rel="alternative" href="/atom.xml" title="闫志伟的网络日志" type="application/atom+xml">
+  <link rel="icon" href="/img/yan.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+  <body>
+    <div id="container">
+      
+
+<div id="main" class="post" itemscope itemprop="blogPost">
+  
+
+  <div id="header-name">闫志伟的网络日志 <span id="site_location"> » <a href="http://drunkevil.org/" accesskey="1">首页</a></span><span id="site_about"> » <a href="http://drunkevil.org/about/">关于</a></span><span id="site_archive"> » <a href="http://drunkevil.org/archives/">归档</a></span>
+  </div>
+
+  <div class="asset-footer">
+		<ul>
+     		
+ 				
+ 			<li><strong>下一篇：</strong> <a href="/2015/06/20/Alain-de-Botton-essays-in-love/" title="德波顿的《爱情笔记》">
+  			  			德波顿的《爱情笔记》
+			</a></li>
+
+			
+				
+			<li><strong>上一篇：</strong> <a href="/2015/06/17/to-see-the-ocean-on-campus/"  title="暴雨淹没了校园">
+  			暴雨淹没了校园</a></li>
+			
+			
+		</ul>
+ </div>
+
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/06/18/the-story-of-notepad-plus-plus/" title="Notepad++背后的故事" itemprop="url">Notepad++背后的故事</a>
+  </h1>
+  
+  <p class="article-author">作者：
+		<a href="http://drunkevil.org/about" target="_blank">闫志伟</a>
+	</p>
+
+  <p class="article-time">
+    <time datetime="2015-06-18T01:45:10.000Z" itemprop="datePublished"> 日期： 2015-06-18</time>
+  </p>
+
+ 
+</header>
+	<div class="article-content">
+		
+		<p>不知道你有没有发现，很多优秀的软件产品，起初都是由一个人来设计完成的。</p>
+<span id="more"></span>
+
+<p>文本和代码编辑器Notepad++也是如此。</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/aeba7ac3gw1et803ot5nmg20co09lmx9.gif"></p>
+<p>早在2003年，程序员<a target="_blank" rel="noopener" href="https://notepad-plus-plus.org/contributors/author.html">Don Ho</a>对他所使用的编辑器不太满意，于是便决定自己开发一个更好的工具，而它就是我们熟悉的Notepad++。自那以后，Notepad++成为很多开发者的选择。</p>
+<p>下面是对Don Ho的访谈，我们可以从中了解到Notepad++背后的故事。</p>
+<p>####开发这个应用的想法从何而来？是你试图解决你遇到的问题，还是灵感来自别的地方？</p>
+<p>当时我所在的公司曾经采用JEXT作为开发工具（用Java编写的一个开源代码编辑器）。由于它的性能不好，在2003年9月，我开始打造另外一种解决方案（用C++来写，可能就是因为这个才叫做Notepad++的吧）。一开始，我发现了<a target="_blank" rel="noopener" href="http://www.scintilla.org/">Scintilla</a>，并在它的基础之上设计出了Notepad++的原型。然而，遗憾的是这种解决方案并没有被公司接受。于是，我决定在我的闲暇时间继续一个人开发它。2003年11月25日，我在<a target="_blank" rel="noopener" href="http://sourceforge.net/">SourceForge</a>上发布了Notepad++的第一个版本。</p>
+<p>####你是如何选择首要的目标平台，而忽略其他的平台或者让其继续等待？</p>
+<p>当时，我主要在Windows下进行开发，因此Windows是我的首要目标平台。四年后，我具有了跨平台（ Windows/MacOSX/Linux Ubuntu）开发经验。这时，有很多的人希望我能够将Notepad++移植到MacOSX和Linux上。于是，我开始考虑将它移植到另外两个平台上。</p>
+<p>（由于Notepad++使用了大量的Win32 API，目前好像还没有其他两个平台下的版本？）</p>
+<p>####我们有很多的编辑器可以选择选择。在你设计Notepad++时，哪一个特性对你来说是最重要的？或者说，你如何做到让Notepad++与其他编辑器有所不同？</p>
+<p>性能。当然，性能是Notepad++首要关注的问题，因为这是它存在的理由。而且，它较小的体积和丰富的通用功能是非常重要的。由于用户的功能要求，Notepad++不仅成为一个通用的源代码编辑器，也是一个全功能的通用文本编辑器。</p>
+<p>####推出这个项目的感受如何？</p>
+<p>推出Notepad++项目真的很普通。我从来没有想到的Notepad++会变得这么受欢迎。我把在源代码和二进制文件都放在SourceForge上，用户下载了它，并使用它。获取用户的反馈意见始终都是一件好事。</p>
+<p>####你如何有效地处理用户的请求和批评？</p>
+<p>处理崩溃的bug报告始终是头等大事，我认为对每一位项目经理来说都是如此。</p>
+<p>然而，对于功能要求来说，我没有立即作出反应。如果同样的功能要求持续不断地被提出，那么我会考虑实现它们。</p>
+<p>虽然我很少回复用户的批评，但我会听取它们。如果批评是建设性的并且足够客观，我会考虑调整项目的方向；否则，我便对这些批评置之不理。我的角色是要考虑什么东西对这个项目是好的（当然，我的设想有可能是主观的）。</p>
+<p>####现在，你如何分配开发新功能和管理现有功能的时间？</p>
+<p>Notepad++的代码结构可能不是软件项目的最佳设计，但它足够好并且便于维护。增加新的功能，一般不影响旧代码。</p>
+<p>另一方面，我要合理分配用在写代码和管理项目二者上面的时间。举个例子，我建立了一个在线文档网站以便于让人们进行合作。</p>
+<p>####你对希望开展一个类似的项目的人有什么建议？</p>
+<p>“享受自己”是第一个也是最基本的目标。</p>
+<p>“尽量使它开源”是我在一个受欢迎的项目中希望达到的主要目标。没有人能独自建造一座教堂。</p>
+<hr>
+<p>【原文链接】<a target="_blank" rel="noopener" href="http://lifehacker.com/behind-the-app-the-story-of-notepad-1711936108">Behind the App: The Story of Notepad++</a></p>
+
+ 	
+ 	<p>（完）</p>
+	
+
+
+ 	<div class="asset-footer">
+	<h4>文档信息</h4>
+		<ul>
+			<li>博文分类： <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96%E5%88%86%E7%B1%BB/">其他分类</a> </li>
+    		<li>发布日期： <a href="/2015/06/18/the-story-of-notepad-plus-plus/" target="_blank">2015-06-18</a></li>
+			<li>更多内容： <a href="http://drunkevil.org/archives/" target="_blank">文章存档</a> </li>
+		</ul>
+	</div>
+	
+。       
+	
+	
+
+	
+	</article>
+</div>  
+   
+  
+
+    </div>
+    <footer><div id="footer" >
+	<p class="copyright"> © <a href="http://drunkevil.org/" target="_blank" title="drunkevil">drunkevil</a> 2014 - 2021 
+	</p>
+
+</div>
+
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+ 
+
+
+
+
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5c3515e8fd7857c1fb4d4de80edc79ab";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+  </body>
+</html>
+

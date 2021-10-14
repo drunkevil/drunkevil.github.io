@@ -1,0 +1,162 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>【教程】使用QQ域名邮箱系统设置自己的域名邮箱 | 闫志伟的网络日志</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <meta name="generator" content="Hexo" />
+  <meta name="author" content="闫志伟">
+  
+  <link rel="alternative" href="/atom.xml" title="闫志伟的网络日志" type="application/atom+xml">
+  <link rel="icon" href="/img/yan.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+  <body>
+    <div id="container">
+      
+
+<div id="main" class="post" itemscope itemprop="blogPost">
+  
+
+  <div id="header-name">闫志伟的网络日志 <span id="site_location"> » <a href="http://drunkevil.org/" accesskey="1">首页</a></span><span id="site_about"> » <a href="http://drunkevil.org/about/">关于</a></span><span id="site_archive"> » <a href="http://drunkevil.org/archives/">归档</a></span>
+  </div>
+
+  <div class="asset-footer">
+		<ul>
+     		
+ 				
+ 			<li><strong>下一篇：</strong> <a href="/2017/11/26/passion/" title="So Good They Can&#39;t Ignore You">
+  			  			So Good They Can&#39;t Ignore You
+			</a></li>
+
+			
+				
+			<li><strong>上一篇：</strong> <a href="/2017/11/22/why-you-love-steemit/"  title="长期来看，你对steemit的信心来自哪里？">
+  			长期来看，你对steemit的信心来自哪里？</a></li>
+			
+			
+		</ul>
+ </div>
+
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/11/23/domain-email/" title="【教程】使用QQ域名邮箱系统设置自己的域名邮箱" itemprop="url">【教程】使用QQ域名邮箱系统设置自己的域名邮箱</a>
+  </h1>
+  
+  <p class="article-author">作者：
+		<a href="http://drunkevil.org/about" target="_blank">闫志伟</a>
+	</p>
+
+  <p class="article-time">
+    <time datetime="2017-11-23T10:49:49.000Z" itemprop="datePublished"> 日期： 2017-11-23</time>
+  </p>
+
+ 
+</header>
+	<div class="article-content">
+		
+		<h3 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h3><p><a target="_blank" rel="noopener" href="http://domain.mail.qq.com/">域名邮箱</a>是腾讯公司推出的一项个性化邮件服务。如果你拥有域名，只需要通过简单的设置，就能够创建以你的域名作为后缀的邮箱。</p>
+<span id="more"></span>
+
+
+<p>我的域名是在godaddy上面购买的，空间是Github的免费空间，参考了腾讯官方给出的QQ域名邮箱设置方法，设置了自己的域名邮箱，具体的操作略有不同。</p>
+<h3 id="2、步骤"><a href="#2、步骤" class="headerlink" title="2、步骤"></a>2、步骤</h3><p><strong>第一步：</strong>域名验证，给自己的域名设置一个<code>CNAME</code>记录</p>
+<p>名称：<code>qqmail3fd0f520</code>（每个人的域名都不一样），IP：<code>mail.qq.com</code>。</p>
+<p><strong>第二步：</strong>设置<code>MX</code>记录，<code>MX</code>记录用来指定由腾讯来对域名提供邮件服务。</p>
+<p>也是在上面同样的地方添加一条<code>MX</code>记录，<code>MX</code>记录设置为<code>mxdomain.qq.com.</code>，优先级为10。其中需要注意的是，godaddy的MX记录设置中，“Host”一栏不允许为空，请填写“@”。</p>
+<p>两步完成之后剩下的就是等待，一般需要2~24小时之内生效，在QQ邮箱中<code>我的域名邮箱</code>显示验证通过，<code>MX</code>记录已设置，之后便可根据提示进行编辑管理操作。</p>
+<h3 id="3、客户端设置"><a href="#3、客户端设置" class="headerlink" title="3、客户端设置"></a>3、客户端设置</h3><p>域名邮箱跟常用邮箱一样，支持在客户端进行邮件收发，设置方法与常用邮箱大同小异。</p>
+<p>设置<code>IMAP</code>服务的<code>SSL</code>加密方式：其中，帐户须填写域名邮箱完整地址，密码为域名邮箱帐户所关联的QQ邮箱密码；接收邮件服务器：<code>imap.qq.com</code>，使用<code>SSL</code>，端口号993，发送邮件服务器：<code>smtp.qq.com</code>，使用<code>SSL</code>，端口号465。</p>
+<p>我的客户端软件为：Windows 电脑上Mozilla Thunderbird，iPhone手机上iOS自带的邮箱，均按照上述方法设置成功。</p>
+<h3 id="4、其他"><a href="#4、其他" class="headerlink" title="4、其他"></a>4、其他</h3><p>由于我的博客采用的是Github的免费空间，域名邮箱只能托管在腾讯的服务器上面，并且是QQ邮箱的服务器，在申请的时候需要绑定你的QQ号码，这就相当于给自己的QQ邮箱起了一个别名。</p>
+<p>从公司成本的角度考虑，这也无可厚非，本来这就是一项免费的服务，腾讯不可能再为此而增加额外的服务器专门提供这样的服务。况且，即便腾讯为此新设了专门的服务器，也不会与QQ邮箱服务器有很大区别，毕竟这是在同一个官方的同一家公司。</p>
+<p>与国内其他常用邮箱相比，我的域名邮箱的审查并没有什么不一样，理论上讲都会受到腾讯甚至是官方的审查。如果想要拥有绝对的独立权和控制权，那就要自己掏钱租用国外可靠的主机服务器，将自己的邮箱托管在上面，毕竟天下没有免费的午餐。</p>
+<p>撇开我对腾讯公司的个人偏见，客观来讲，QQ邮箱的服务还是让我比较满意的。不管是网页版用户界面还是常用功能，至少不会比其他一些国内邮箱差。有一些功能甚至是我个人非常赞同的，比如你想给很多人发送相同内容的邮件，这便是大多数邮件服务的群发功能，但又只想让每个人都只能看到发给了自己，而不是每个人都看到这封邮件都发给了哪些人，这就不是群发了。QQ邮箱便可实现这种需求，而且十分简单，在群发的时候点击分别发送即可实现。</p>
+
+ 	
+ 	<p>（完）</p>
+	
+
+
+ 	<div class="asset-footer">
+	<h4>文档信息</h4>
+		<ul>
+			<li>博文分类： <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96%E5%88%86%E7%B1%BB/">其他分类</a> </li>
+    		<li>发布日期： <a href="/2017/11/23/domain-email/" target="_blank">2017-11-23</a></li>
+			<li>更多内容： <a href="http://drunkevil.org/archives/" target="_blank">文章存档</a> </li>
+		</ul>
+	</div>
+	
+。       
+	
+	
+
+	
+	</article>
+</div>  
+   
+  
+
+    </div>
+    <footer><div id="footer" >
+	<p class="copyright"> © <a href="http://drunkevil.org/" target="_blank" title="drunkevil">drunkevil</a> 2014 - 2021 
+	</p>
+
+</div>
+
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+ 
+
+
+
+
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5c3515e8fd7857c1fb4d4de80edc79ab";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+  </body>
+</html>
+
