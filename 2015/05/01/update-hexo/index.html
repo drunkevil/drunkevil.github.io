@@ -1,0 +1,246 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>hexo更换电脑及升级3.0那些事儿 | 闫志伟的网络日志</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <meta name="generator" content="Hexo" />
+  <meta name="author" content="闫志伟">
+  
+  <link rel="alternative" href="/atom.xml" title="闫志伟的网络日志" type="application/atom+xml">
+  <link rel="icon" href="/img/yan.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+  <body>
+    <div id="container">
+      
+
+<div id="main" class="post" itemscope itemprop="blogPost">
+  
+
+  <div id="header-name">闫志伟的网络日志 <span id="site_location"> » <a target="_blank" rel="noopener" href="http://drunkevil.org/" accesskey="1">首页</a></span><span id="site_about"> » <a target="_blank" rel="noopener" href="http://drunkevil.org/about/">关于</a></span><span id="site_archive"> » <a target="_blank" rel="noopener" href="http://drunkevil.org/archives/">归档</a></span>
+  </div>
+
+  <div class="asset-footer">
+		<ul>
+     		
+ 				
+ 			<li><strong>下一篇：</strong> <a href="/2015/05/02/shanghai-hukou-1/" title="毕业落户进展(1)">
+  			  			毕业落户进展(1)
+			</a></li>
+
+			
+				
+			<li><strong>上一篇：</strong> <a href="/2015/04/29/complex-number-and-quadrature-signal/"  title="理解复数和正交信号">
+  			理解复数和正交信号</a></li>
+			
+			
+		</ul>
+ </div>
+
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/05/01/update-hexo/" title="hexo更换电脑及升级3.0那些事儿" itemprop="url">hexo更换电脑及升级3.0那些事儿</a>
+  </h1>
+  
+  <p class="article-author">作者：
+		<a href="http://drunkevil.net/about" target="_blank">闫志伟</a>
+	</p>
+
+  <p class="article-time">
+    <time datetime="2015-05-01T06:21:20.000Z" itemprop="datePublished"> 日期： 2015-05-01</time>
+  </p>
+
+ 
+</header>
+	<div class="article-content">
+		
+		<p>之前，hexo博客程序安装在实验室的电脑上，每次更新博客都要通过这台电脑进行。</p>
+<span id="more"></span>
+
+<p>很快，这台电脑将<a target="_blank" rel="noopener" href="http://drunkevil.com/2015/04/12/concealed-evaluation/">不再属于我</a>。不懂<a target="_blank" rel="noopener" href="http://lucifr.com/2013/06/02/hexo-on-cloud-with-dropbox-and-vps/">Hexo服务器端布署及Dropbox同步</a>，不会<a target="_blank" rel="noopener" href="http://ibruce.info/2013/11/22/hexo-your-blog/">配置Node+Git+Hexo的绿色环境</a>，不想<a target="_blank" rel="noopener" href="http://wuchong.me/blog/2014/01/17/use-github-to-manage-hexo-source/">使用GitHub来管理博客源文件</a>。于是考虑在家里的电脑上安装一下hexo。记录其中两三事儿。</p>
+<h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><p>包括hexo目录下的source文件夹，_config.yml文件，以及主题文件夹。</p>
+<h3 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h3><p>所有必备的应用程序（<a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a>，<a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a>）安装完成后，即可使用npm安装Hexo-cli和Hexo。</p>
+<blockquote>
+<pre><code>$ npm install -g hexo-cli
+$ npm install hexo --save
+</code></pre>
+</blockquote>
+<p><img src="http://i.imgur.com/wMRsWp1.png"></p>
+<h3 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="3.安装插件"></a>3.安装插件</h3><p>主要有：首页文章数量，存档，分类的插件；部署器插件；rss site-map之类插件。按需安装。</p>
+<blockquote>
+</blockquote>
+<pre><code>npm install hexo-generator-index --save
+npm install hexo-generator-archive --save
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm install hexo-server --save
+npm install hexo-deployer-git --save
+npm install hexo-deployer-heroku --save
+npm install hexo-deployer-rsync --save
+npm install hexo-deployer-openshift --save
+npm install hexo-renderer-marked@0.2 --save
+npm install hexo-renderer-stylus@0.2 --save
+npm install hexo-generator-feed@1 --save
+npm install hexo-generator-sitemap@1 --save
+</code></pre>
+<h3 id="4-修改全局配置文件"><a href="#4-修改全局配置文件" class="headerlink" title="4.修改全局配置文件"></a>4.修改全局配置文件</h3><p>之前的分页设置为：</p>
+<blockquote>
+<pre><code># Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 0
+</code></pre>
+</blockquote>
+<p>修改为：</p>
+<blockquote>
+<pre><code>index_generator:
+  per_page: 10 ##首页默认10篇文章标题 如果值为0不分页
+archive_generator:
+    per_page: 10 ##归档页面默认10篇文章标题
+    yearly: true  ##生成年视图
+    monthly: true ##生成月视图
+tag_generator:
+    per_page: 10 ##标签分类页面默认10篇文章
+category_generator: 
+    per_page: 10 ###分类页面默认10篇文章
+</code></pre>
+</blockquote>
+<p>RSS配置为：</p>
+<blockquote>
+<pre><code>feed:
+    type: atom ##feed类型 atom或者rss2
+    path: atom.xml ##feed路径
+    limit: 20  ##feed文章最小数量
+</code></pre>
+</blockquote>
+<h3 id="5-部署类型"><a href="#5-部署类型" class="headerlink" title="5.部署类型"></a>5.部署类型</h3><p>hexo3.0一共提供了5种部署类型，对于部署到Github或者Gitcafe上面来说，选择的部署类型为Git，首先安装插件：</p>
+<blockquote>
+<p>   $ npm install hexo-deployer-git –save</p>
+</blockquote>
+<p><img src="http://i.imgur.com/tDyrRQB.png"></p>
+<p>修改配置：</p>
+<blockquote>
+<pre><code>deploy:
+    type: git
+    repo: &lt;repository url&gt;##库（Repository）地址
+    branch: [branch]##分支名称
+    message: [message]##自定提交信息 
+</code></pre>
+</blockquote>
+<p>可同时使用多个 deployer，Hexo 会依照顺序执行每个 deployer。</p>
+<blockquote>
+<pre><code>deploy:
+- type: git
+  repo: 
+- type: heroku
+  repo:
+</code></pre>
+</blockquote>
+<p>比如同时部署到Github和Gitcafe：</p>
+<blockquote>
+<pre><code>deploy:
+     type: git
+     message: update  ##git 
+     repo: 
+          github: &lt;repository url&gt;,[branch] ##github 仓库地址和分支
+          gitcafe: &lt;repository url&gt;,[branch] ##gitcafe 仓库地址和分支
+</code></pre>
+</blockquote>
+<h3 id="6-查看版本"><a href="#6-查看版本" class="headerlink" title="6.查看版本"></a>6.查看版本</h3><p>纯属多余，大可不必。</p>
+<blockquote>
+<pre><code>$ hexo v
+</code></pre>
+</blockquote>
+<p><img src="http://i.imgur.com/sQoMLdi.png"></p>
+
+ 	
+ 	<p>（完）</p>
+	
+
+
+ 	<div class="asset-footer">
+	<h4>文档信息</h4>
+		<ul>
+			<li>博文分类： <a class="category-link" href="/categories/%E5%85%B6%E4%BB%96%E5%88%86%E7%B1%BB/">其他分类</a> </li>
+    		<li>发布日期： <a href="/2015/05/01/update-hexo/" target="_blank">2015-05-01</a></li>
+			<li>更多内容： <a href="http://drunkevil.org/archives/" target="_blank">文章存档</a> </li>
+		</ul>
+	</div>
+	
+。       
+	
+	
+
+	
+	</article>
+</div>  
+   
+  
+
+    </div>
+    <footer><div id="footer" >
+	<p class="copyright"> © <a href="http://drunkevil.org/" target="_blank" title="drunkevil">drunkevil</a> 2014 - 2021 
+	</p>
+
+</div>
+
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+ 
+
+
+
+
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5c3515e8fd7857c1fb4d4de80edc79ab";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+  </body>
+</html>
+

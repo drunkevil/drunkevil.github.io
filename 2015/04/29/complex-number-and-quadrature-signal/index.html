@@ -1,0 +1,216 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>理解复数和正交信号 | 闫志伟的网络日志</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <meta name="generator" content="Hexo" />
+  <meta name="author" content="闫志伟">
+  
+  <link rel="alternative" href="/atom.xml" title="闫志伟的网络日志" type="application/atom+xml">
+  <link rel="icon" href="/img/yan.ico">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+  <body>
+    <div id="container">
+      
+
+<div id="main" class="post" itemscope itemprop="blogPost">
+  
+
+  <div id="header-name">闫志伟的网络日志 <span id="site_location"> » <a target="_blank" rel="noopener" href="http://drunkevil.org/" accesskey="1">首页</a></span><span id="site_about"> » <a target="_blank" rel="noopener" href="http://drunkevil.org/about/">关于</a></span><span id="site_archive"> » <a target="_blank" rel="noopener" href="http://drunkevil.org/archives/">归档</a></span>
+  </div>
+
+  <div class="asset-footer">
+		<ul>
+     		
+ 				
+ 			<li><strong>下一篇：</strong> <a href="/2015/05/01/update-hexo/" title="hexo更换电脑及升级3.0那些事儿">
+  			  			hexo更换电脑及升级3.0那些事儿
+			</a></li>
+
+			
+				
+			<li><strong>上一篇：</strong> <a href="/2015/04/28/imaginary-unit/"  title="YouTube上面一个关于虚数单位的视频">
+  			YouTube上面一个关于虚数单位的视频</a></li>
+			
+			
+		</ul>
+ </div>
+
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/04/29/complex-number-and-quadrature-signal/" title="理解复数和正交信号" itemprop="url">理解复数和正交信号</a>
+  </h1>
+  
+  <p class="article-author">作者：
+		<a href="http://drunkevil.net/about" target="_blank">闫志伟</a>
+	</p>
+
+  <p class="article-time">
+    <time datetime="2015-04-29T07:31:27.000Z" itemprop="datePublished"> 日期： 2015-04-29</time>
+  </p>
+
+ 
+</header>
+	<div class="article-content">
+		
+		<p>对于很多人来说，复数的数学概念和运算法则十分明确，但是它的物理意义却很难理解。为什么一个数与它自身相乘的结果能够等于-1？</p>
+<span id="more"></span>
+
+<h2 id="理解复数"><a href="#理解复数" class="headerlink" title="理解复数"></a>理解复数</h2><p>实数是我们能够在生活中实际接触或者感受到的大部分数字，比如你的体重，今天的温度，圆周率，你银行卡里面的账户余额等，他们可正可负，通常可用下图（a）中的一维直线上的一个点来表示，称这条直线为坐标轴，也即<strong>实轴</strong>。</p>
+<p><img src="http://i.imgur.com/9WmtDEs.png"></p>
+<p>有了实轴，也就有虚轴，二者相互垂直（正交）。由实轴和虚轴组成的二维平面叫做复平面。一个复数可以用复平面上面的一个点来表示，如上图（b）所示。</p>
+<p>对于复数$c=a+jb$，在复平面上面从几何的角度来理解如下。其中，$c$的幅度为：</p>
+<p>$$M = \sqrt{a^2+b^2}$$</p>
+<p>也称为模。相角为：$\phi  = {\arctan }(\frac{b}{a})$。</p>
+<p><img src="http://i.imgur.com/pqBJUIn.png"></p>
+<p>据此可以得到复数的不同数学表达形式：</p>
+<p><img src="http://i.imgur.com/kNbdKJs.png"></p>
+<p>从上面的三角坐标和极坐标形式可以得到著名的欧拉定理：</p>
+<p>$$e^{j\phi } = cos(\phi ) + jsin(\phi )$$</p>
+<p>关于欧拉定理的另外一种证明为，将$e^{j\phi }$和$cos(\phi )$、$sin(\phi )$分别进行泰勒级数展开，即：</p>
+<p><img src="http://i.imgur.com/vdDMLK9.png"></p>
+<p>同理我们也可以得到：</p>
+<p>$$e^{-j\phi } = cos(\phi ) - jsin(\phi )$$</p>
+<p>通常，我们采用上面两个公式对正交信号进行分析，它大大简化了我们的数学分析。</p>
+<p>以上我们只是介绍了复数的一些基本知识，并有意的绕开了对$j^2 = -1 $的探讨。而大多数的教材上都是理所当然的给出了我们$j$的定义，并毫不犹豫的拿来使用，并没有真正的告诉我们$j^2 = -1 $究竟是什么意思。</p>
+<p>事实上，这并不是他们的错误，而是$j$真的没有意义！它仅仅是一种数学上的表达罢了。实际中也不会存在自身乘以自身等于-1的数。而通信系统也不会进行复数运算，仅仅是将分析中使用的复数的实部和虚部存储到不同的地方并根据复数运算法则进行相应的处理。</p>
+<p>欧拉通过欧拉定理建立了复数和实的正弦和余弦信号之间的桥梁，而伟大的高斯则引入了复平面，最终给出了$\sqrt{-1}$的定义才解决了困扰了欧洲数学家很久的数学难题。正如爱因斯坦证明了质量和能量的等价性，欧拉则证明了实的正弦和余弦信号等价于复信号。现代的物理学家们并没有真正的知道什么是电子却对电子的性质了如指掌。我们一点也不应该拘泥于究竟什么是$j$而应该去更好的理解它的性质。</p>
+<p>实际上，我们只需要知道任何一个数与$j$相乘，意味着将这个数在复平面内沿着逆时针方向旋转90度，如下图所示。相反，乘以$-j$则意味着在复平面内沿着顺时针方向旋转90度。</p>
+<p><img src="http://i.imgur.com/We4T3aa.png"></p>
+<p>在欧拉定理中，我们令$ \phi  = \frac{\pi }{2} $，则有：</p>
+<p>$$e^{j\frac{\pi }{2} } = cos(\frac{\pi }{2} ) + jsin(\frac{\pi }{2} )$$</p>
+<p>$$e^{j\frac{\pi }{2} } = j$$</p>
+<p>这个结果很有意思，它表明在复平面上面的一个点乘以$e^{j\frac{\pi}{2}}$等价于乘以$j$，相当于沿逆时针方向旋转90度。它是在信号处理中常用的相位旋转的基础和数学表达形式。</p>
+<h2 id="正交信号的时域理解"><a href="#正交信号的时域理解" class="headerlink" title="正交信号的时域理解"></a>正交信号的时域理解</h2><p>在通信系统和信号处理中，我们经常会遇到<strong>正交信号</strong>。所谓正交信号，它是一个二维信号，它在某一时刻的值可以用一个复数来表示。我们知道，一个复数通常包含<strong>实部</strong>和<strong>虚部</strong>两个部分，在信号中，一般叫做<strong>同相分量</strong>和<strong>正交分量</strong>。</p>
+<p>考虑一个复数，它的幅值为1，相角随着时间的增加而增大。这样的复数可以用复平面上的点${e^{j2\pi {f_0}t}}$来表示，如下图（a）中的实心圆点所示。同理考虑${e^{-j2\pi {f_0}t}}$，它在复平面上面为下图（a）中的空心圆点所示。容易理解，随着时间t的增加，实心圆点沿着逆时针方向旋转，而空心远点沿着顺时针方向旋转。我们也可以将这样的点理解为矢量，如下图（b）所示。</p>
+<p><img src="http://i.imgur.com/uaMG2fp.png"></p>
+<p>这里，称它们为复数形式的<strong>正交信号</strong>。它们都由实部和虚部构成，都是时间t的函数。通常，称这样的表达式为<strong>复指数形式</strong>。</p>
+<p>为了对上图中的矢量有一个更加直观的理解，下图（a）给出了矢量${e^{j2\pi {f_0}t}}$随着时间变化的三维变化路径。下图（b）则给出了矢量${e^{j2\pi {f_0}t}}$的实部和虚部在两个坐标平面上的投影，可以看出，它们分别是正弦曲线和余弦曲线。巧合的是，它再一次验证了欧拉定理的正确性！</p>
+<p><img src="http://i.imgur.com/otbjCGw.png"></p>
+<p>为了加深对两个复数相加可以得到一个实数这一概念的理解，下图是两个幅度为1/2的复矢量相加的结果与时间t的变化关系。可以看出，结果是一个虚部为0，实部为余弦函数的曲线。这一性质正是现代数字通信系统实现的基础。</p>
+<p><img src="http://i.imgur.com/tXID129.png"></p>
+<p>看到了这里，我们对实数，复数，正交信号有了深入的了解。再次强调，复数只是为了方便分析而引入的数学工具，计算机真正进行存储，处理，通信的数据，都是实数信号。而正交，也只不过是我们给复数形式表示的信号的实部和虚部所起的另外一种特殊的名字罢了，有时候，我们也称实部和虚部分别为同相分量和正交分量。</p>
+<h2 id="正交信号的频域理解"><a href="#正交信号的频域理解" class="headerlink" title="正交信号的频域理解"></a>正交信号的频域理解</h2><p>相比于时域分析，频域则给了我们另外一种角度的理解。根据数字信号处理的知识，时域e指数信号对应的频谱为脉冲。下图给出了余弦信号和正弦信号的复频域表示。</p>
+<p><img src="http://i.imgur.com/uUJ28bm.png"></p>
+<p>下面这幅图则从复频域的角度再一次的验证了欧拉定理的正确性，让我们不得不再一次的感叹其数学上的完美性！</p>
+<p><img src="http://i.imgur.com/L7Gq4Lg.png"></p>
+<p>如果你明白了上图中的所有操作，那么你已经对正交信号的数学和物理含义都有了深刻的理解。</p>
+
+ 	
+ 	<p>（完）</p>
+	
+
+
+ 	<div class="asset-footer">
+	<h4>文档信息</h4>
+		<ul>
+			<li>博文分类： <a class="category-link" href="/categories/%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1/">无线通信</a> </li>
+    		<li>发布日期： <a href="/2015/04/29/complex-number-and-quadrature-signal/" target="_blank">2015-04-29</a></li>
+			<li>更多内容： <a href="http://drunkevil.org/archives/" target="_blank">文章存档</a> </li>
+		</ul>
+	</div>
+	
+。       
+	
+	
+
+	
+	</article>
+</div>  
+   
+  
+
+    </div>
+    <footer><div id="footer" >
+	<p class="copyright"> © <a href="http://drunkevil.org/" target="_blank" title="drunkevil">drunkevil</a> 2014 - 2021 
+	</p>
+
+</div>
+
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+ 
+
+
+
+
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5c3515e8fd7857c1fb4d4de80edc79ab";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<!-- MathJax End -->
+
+  </body>
+</html>
+
